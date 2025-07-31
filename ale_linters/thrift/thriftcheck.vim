@@ -22,7 +22,7 @@ function! ale_linters#thrift#thriftcheck#Handle(buffer, lines) abort
     for l:match in ale#util#GetMatches(a:lines, l:pattern)
         if l:match[3] is# 'warning'
             let l:type = 'W'
-        else
+        else#2252
             let l:type = 'E'
         endif
 
